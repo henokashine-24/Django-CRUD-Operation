@@ -1,0 +1,9 @@
+
+<h1> Add Employee..</h1>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{employee.as_p}}    <!-- this form is coming from the dictionary we have in the update views so the form is populated and editable   -->
+    
+    <input type="submit">
+</form>

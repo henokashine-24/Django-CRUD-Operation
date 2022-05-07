@@ -1,0 +1,14 @@
+
+
+<h1 style="text-align: center;"> Are you Sure you want delete {{employee}} ? </h1>
+
+
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        <input type="submit" value="Yes">
+
+        <button> <a href="{% url 'employee-home' %}"> No </a> </button>
+
+    </form>
+
